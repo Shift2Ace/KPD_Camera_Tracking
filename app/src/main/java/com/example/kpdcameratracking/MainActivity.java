@@ -33,11 +33,12 @@ import android.widget.ImageView;
 
 import java.nio.ByteBuffer;
 import java.util.Arrays;
+import android.Manifest;
+
 
 
 public class MainActivity extends AppCompatActivity {
-
-
+    private static final int VIBRATER_TIMES = 100;
     CaptureRequest.Builder previewRequestBuilder;
     HandlerThread handlerThread = new HandlerThread("camera");
     Handler mCameraHandler;
